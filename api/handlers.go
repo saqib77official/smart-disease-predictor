@@ -37,7 +37,7 @@ func PredictHandler(c *gin.Context) {
 	mlURL := os.Getenv("ML_URL")
 	if mlURL == "" {
 		// Default for local testing
-		mlURL = "http://localhost:5000"
+		mlURL = "https://smart-disease-ml.onrender.com"
 	}
 
 	// Structure to store prediction result
